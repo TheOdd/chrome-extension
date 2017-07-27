@@ -1,0 +1,10 @@
+{
+  "name": "My Extension",
+  "version": "1.0",
+  "manifest_version": 2,
+  "description": "Test Extension",
+  "content_scripts": [],
+  "browser_action": {
+    "default_icon": "./ripdog.png"
+  }
+}
