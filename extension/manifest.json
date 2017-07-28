@@ -1,10 +1,23 @@
 {
-  "name": "My Extension",
+  "name": "Odd's Extension",
   "version": "1.0",
   "manifest_version": 2,
   "description": "Test Extension",
-  "content_scripts": [],
+  "content_scripts": [
+    {
+      "matches": ["http://*/*","https://*/*"],
+      "js": ["js/jquery.min.js", "js/message_listener.js"]
+    }
+  ],
   "browser_action": {
-    "default_icon": "./ripdog.png"
-  }
+    "default_icon": "./images/ripdog.png",
+    "default_popup": "./html/popup.html"
+  },
+  "background": {
+    "page": "./html/popup.html"
+  },
+  "permissions": [
+    "activeTab",
+    "storage"
+  ]
 }
