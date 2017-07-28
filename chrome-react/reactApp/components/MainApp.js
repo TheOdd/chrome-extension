@@ -16,7 +16,7 @@ class MainApp extends React.Component {
       msg: this.state.text
     })
     chrome.tabs.executeScript(null, {
-      file: '../js/content_script.js'
+      file: '/js/content_script.js'
     })
   }
 
