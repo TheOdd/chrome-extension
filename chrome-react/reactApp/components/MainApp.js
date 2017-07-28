@@ -1,5 +1,4 @@
 import React from 'react';
-import Stopwatch from './Stopwatch';
 import ChromePromise from 'chrome-promise';
 const chromep = new ChromePromise();
 
